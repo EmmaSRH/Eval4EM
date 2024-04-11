@@ -9,8 +9,8 @@ from utils import load_data
 import numpy as np
 
 
-def write_to_txt(dice,jaccard,precision,recall,f1):
-    output_file = "evaluation_results.txt"
+def write_to_txt(dice,jaccard,precision,recall,f1,save_file):
+    output_file = save_file
     with open(output_file, "w") as f:
         f.write("Dice coefficient: {}\n".format(dice))
         f.write("Jaccard coefficient: {}\n".format(jaccard))
@@ -27,6 +27,9 @@ if __name__ == '__main__':
     parser.add_argument('--pre', type=str,
                         default='test_examples/gt.npy',
                         help='dir for prediction volume data')
+    parser.add_argument('--save_file', type=str,
+                        default='results/evaluation_results.txt',
+                        help='path to save results')
     args = parser.parse_args()
 
     # gt_volume = load_data(args.gt)
