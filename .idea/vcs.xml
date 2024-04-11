@@ -2,7 +2,6 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/cremi_python" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/funlib.evaluate" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/mAP_3Dvolume" vcs="Git" />
   </component>
 </project>

@@ -3,3 +3,5 @@ numpy
 scipy
 munkres
 imageio
+tqdm
+opencv 

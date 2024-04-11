@@ -1,5 +1,0 @@
-Dice coefficient: 0.75
-Jaccard coefficient: 0.599999880000024
-Precision: 1.0
-Recall: 0.6
-F1 score: 0.7499999999999999

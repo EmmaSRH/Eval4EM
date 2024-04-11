@@ -1,4 +1,6 @@
 import argparse
+import pdb
+
 from utils import compute_dice_coefficient
 from utils import jaccard_coefficient
 from utils import precision_recall
@@ -27,14 +29,16 @@ if __name__ == '__main__':
                         help='dir for prediction volume data')
     args = parser.parse_args()
 
-    gt_volume = load_data(args.gt)
-    pre_volume = load_data(args.pre)
+    # gt_volume = load_data(args.gt)
+    # pre_volume = load_data(args.pre)
 
     # Example usage
     # Assuming gt_volume and pred_volume are numpy arrays representing ground truth and prediction volumes
-    gt_volume = np.array([[0, 1, 1],
+    gt_volume = np.array([[[0, 1, 1],
                           [1, 0, 1],
-                          [1, 0, 0]])
+                          [1, 0, 0]]])
+    print(gt_volume.shape)
+    pdb.set_trace()
 
     pred_volume = np.array([[0, 1, 0],
                             [1, 0, 1],
