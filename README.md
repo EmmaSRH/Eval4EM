@@ -5,6 +5,13 @@ This project is used for the evalation for EM 2D and 3D image segmentation task.
 ## Installation
 ------------
 
+You can use one of the following two commands to install the required packages:
+```
+conda install --yes --file requirements.txt
+pip install -r requirements.txt
+```
+
+
 ## Evaluate for Cremi Data
 ------------
 
