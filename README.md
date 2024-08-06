@@ -80,6 +80,26 @@ The following steps will be executed by the script:
 
 3) Evaluate the model performance with mAP by using the 3D optimized evaluation script  and the 2 tables mentioned above.
 
+
+## Evaluate For Denoise and Interplation Tasks
+------------
+
+We provide PSNR, SSIM, LPIPS, Foutier Ring Correlation scores.
+
+Run the following command to use the tool:
+```
+python eval_binary_seg.py --gt 'path to gt mask' --pre 'path to pre mask' --save_file 'results/evaluation_results.txt'
+```
+
+The following steps will be executed by the script:
+1) Load the following 3D arrays:
+- GT segmentation volume
+- prediction segmentation volume
+
+2) Calculate the scores
+
+3) Save the results to txt file
+
 Acknowledgements
 ----------------
 
